@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ignite App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Ignite Social App</h1>
+
+<div id="auth">
+  <input id="name" placeholder="Name">
+  <input id="email" placeholder="Email">
+  <input id="password" type="password" placeholder="Password">
+  <button onclick="signup()">Signup</button>
+  <button onclick="login()">Login</button>
+</div>
+
+<div id="chatUI" style="display:none">
+  <h2>Live Chat</h2>
+  <div id="messages"></div>
+  <input id="msgInput" placeholder="Type message">
+  <button onclick="sendMessage()">Send</button>
+</div>
+
+<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
